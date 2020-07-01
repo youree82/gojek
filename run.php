@@ -68,7 +68,7 @@ ulang:
 						echo color("white",".");
 						sleep(1);
 					}
-					$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"STAYGOFOOD201105SCE"}');
+					$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2206"}');
 					$message = fetch_value($code1,'"message":"','"');
 					if (strpos($code1, 'Promo kamu sudah bisa dipakai.')) {
 						echo "\n".color("green","Message: ".$message);
@@ -92,7 +92,7 @@ ulang:
 							sleep(1);
 						}
 						sleep(3);
-						$boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"STAYGOFOOD201105SCE"}');
+						$boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2206"}');
 						$messageboba09 = fetch_value($boba09,'"message":"','"');
 						echo "\n".color("white","Message: ".$messageboba09);
 						sleep(1);
